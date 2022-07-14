@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import Logo from './assets/Logo.svg'
+import Logo from './assets/Logo.svg';
 import {
   SafeAreaView,
   ScrollView,
@@ -21,26 +21,24 @@ import {
 const App = () => {
   return (
     <>
-    <SafeAreaView style={{
-      backgroundColor: "#131315"
-    }}>
-    </SafeAreaView>
-    <View style={styles.container}>
-      <Logo style={{
-        marginTop: 40,
-        marginBottom: 40
-      }}
-      height={300} 
-      width={300} 
-      />
-      
-      <Text style={styles.text}>Self</Text>
-      <Text style={styles.text}>Sovereign</Text>
-      <Text style={styles.text}>Identity</Text>
-    </View>
+      <StatusBar animated={true} backgroundColor="#131315" />
+      <View style={styles.container}>
+        <Logo
+          style={{
+            marginTop: 40,
+            marginBottom: 40,
+          }}
+          height={350}
+          width={350}
+        />
+
+        <Text style={styles.text}>SELF</Text>
+        <Text style={styles.text}>SOVEREIGN</Text>
+        <Text style={styles.text}>IDENTITY</Text>
+      </View>
     </>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -51,11 +49,11 @@ const styles = StyleSheet.create({
   text: {
     color: '#e6e6e6',
     fontSize: 40,
-    // fontWeight: '100',
+    fontWeight: '300',
     letterSpacing: 1,
     alignItems: 'center',
-    fontFace: 'Fibre'
+    fontFace: 'Fibre',
   },
-})
+});
 
 export default App;
