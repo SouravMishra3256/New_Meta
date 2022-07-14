@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     letterSpacing: 1,
     alignItems: 'center',
-    fontFace: 'Fibre',
+    fontFamily: 'Roboto-Black'
   },
 });
 
