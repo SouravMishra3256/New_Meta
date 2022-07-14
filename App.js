@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+import Logo from './assets/Logo.svg'
 import {
   SafeAreaView,
   ScrollView,
@@ -18,12 +18,44 @@ import {
   View,
 } from 'react-native';
 
-const App: () => Node = () => {
-  return(
-    <SafeAreaView>
-      <Text>Hello World</Text>
+const App = () => {
+  return (
+    <>
+    <SafeAreaView style={{
+      backgroundColor: "#131315"
+    }}>
     </SafeAreaView>
+    <View style={styles.container}>
+      <Logo style={{
+        marginTop: 40,
+        marginBottom: 40
+      }}
+      height={300} 
+      width={300} 
+      />
+      
+      <Text style={styles.text}>Self</Text>
+      <Text style={styles.text}>Sovereign</Text>
+      <Text style={styles.text}>Identity</Text>
+    </View>
+    </>
   );
-};
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#131315',
+    alignItems: 'center',
+  },
+  text: {
+    color: '#e6e6e6',
+    fontSize: 40,
+    // fontWeight: '100',
+    letterSpacing: 1,
+    alignItems: 'center',
+    fontFace: 'Fibre'
+  },
+})
 
 export default App;
