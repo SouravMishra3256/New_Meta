@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     // fontWeight: '100',
     letterSpacing: 1,
     alignItems: 'center',
-    fontFace: 'Fibre'
+    fontFamily: 'Roboto-Black'
   },
 })
 
