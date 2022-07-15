@@ -7,11 +7,15 @@
  */
 
 import React from 'react';
-import LandingPage from './components/landingpage';
+import Splash from './screens/Splash';
+import Login from './screens/Login';
 
 const App = () => {
   return (
-    <LandingPage />
+    <>
+      {/* <Splash /> */}
+      <Login />
+    </>
   );
 };
 
